@@ -2,10 +2,13 @@
 2. Screenshot:
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/23727250/178113708-ff377622-72e0-455a-abdf-9f98b43ee438.png">
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/23727250/178113721-27f4b65c-3d25-45f5-b13c-ab11f9ac9186.png">
+
 3. Deployment:
   - Cloudfront https://d1cyh2r46e2bzb.cloudfront.net
   - S3 http://rs-react-app-vitaliibogdaniuk-autobuild.s3-website-us-east-1.amazonaws.com (Will have access denied erro due to access limit by CloudFront only)
+  
 4. Done 2022-07-09 / deadline 2022-07-11
+
 5. Score 5/5
   Serve SPA in AWS S3 and CloudFront Services (5/5)
   - S3 bucket has been created and configured properly. (manually and with serverless)

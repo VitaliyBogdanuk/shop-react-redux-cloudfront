@@ -9,6 +9,7 @@ import {Link} from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   content: {
+    backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(3, 0, 3),
   },
 }));
@@ -19,7 +20,7 @@ export default function PageProductImport() {
   return (
     <div className={classes.content}>
       <Box display="flex" alignItems="center">
-        <CSVFileImport url={`${API_PATHS.import}/import`} title="Import Products CSV"/>
+        <CSVFileImport url={`${API_PATHS.import}/product/import`} title="Import Products CSV"/>
         <Button size="small" color="primary" variant="contained" component={Link} to={'/admin/product-form/'}>
           create product
         </Button>

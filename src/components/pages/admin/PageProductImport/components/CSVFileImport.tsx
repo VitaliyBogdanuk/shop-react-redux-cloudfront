@@ -45,6 +45,10 @@ export default function CSVFileImport({url, title}: CSVFileImportProps) {
         method: 'PUT',
         body: file,
         headers: {
+          'Access-Control-Allow-Origin': '*',
+          "Access-Control-Allow-Headers" : "*",
+          'Access-Control-Allow-Credentials': 'true',
+          'Access-Control-Allow-Methods': 'GET, OPTIONS, POST',
           'Content-Type': file.type
         }
       })

@@ -57,14 +57,10 @@ export default function CSVFileImport({url, title}: CSVFileImportProps) {
       console.log('Uploading to: ', response.data.uploadURL)
       const result = await fetch(response.data.uploadURL, {
         method: 'PUT',
-<<<<<<< HEAD
         body: file,
         headers: {
           'Content-Type': file.type
         }
-=======
-        body: blobData
->>>>>>> main
       })
       console.log('Result: ', result)
       // Final URL for the user doesn't need the query string params
